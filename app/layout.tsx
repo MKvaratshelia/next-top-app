@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
-import { Inter, Noto_Sans_KR } from 'next/font/google';
+import { Noto_Sans_KR } from 'next/font/google';
 import './globals.css';
+import { Layout } from './layout/Layout';
+import { AppContextProvider } from './context/app.context';
 
 const NotoSansKR = Noto_Sans_KR({ subsets: ['latin'], weight: ['300', '400', '500'] });
 
@@ -16,7 +18,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='ru'>
-            <body className={NotoSansKR.className}>{children}</body>
+            <body className={NotoSansKR.className}>
+                <Layout>{children}</Layout>
+            </body>
         </html>
     );
 }

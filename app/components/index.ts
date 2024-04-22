@@ -1,3 +1,9 @@
+export { Htag } from './Htag/Htag';
+export { Search } from './Search/Search';
+export { Input } from './Input/Input';
+export { ButtonIcon } from './ButtonIcon/ButtonIcon';
+export { Up } from './Up/Up';
+export { Rating } from './Rating/Rating';
+export { Tag } from './Tag/Tag';
 export { P } from './P/P';
 export { Button } from './Button/Button';
-export { Htag } from './Htag/Htag';
